@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detox Gadget Anak - Panduan Mengembalikan Fokus & Senyum Anak</title>
+    <meta name="description" content="Panduan orang tua mengurangi ketergantungan anak terhadap gadget tanpa drama, tanpa kekerasan, dan tanpa rasa bersalah.">
+    <meta name="theme-color" content="#c2410c">
+
+    <!-- Preconnect (Speed Booster) -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://connect.facebook.net">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    // GANTI PIXEL ID ANDA DI SINI
+    fbq('init', '1279669170653881'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1279669170653881&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+    <style>
+        /* 1. RESET & VARIABLES (PROFESSIONAL EARTHY TONES) */
+        :root { 
+            /* Primary: Terracotta/Deep Orange (Sesuai Judul Buku) */
+            --primary: #c2410c; 
+            /* Background: Soft Cream/Paper */
+            --primary-light: #fff7ed; 
+            /* Action: Emerald Green - High Trust */
+            --action: #047857;  
+            /* Dark Text: Deep Brown/Coffee */
+            --dark: #431407; 
+            --text-main: #334155; 
+            --bg-light: #fff7ed; 
+            --white: #ffffff; 
+            --red: #dc2626; 
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--white); color: var(--text-main); line-height: 1.6; padding-bottom: 90px; text-rendering: optimizeSpeed; }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; height: auto; display: block; }
+        ul { list-style: none; }
+
+        /* 2. UTILITY */
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        .text-center { text-align: center; }
+        .bold { font-weight: 700; }
+        .text-primary { color: var(--primary); }
+        .text-action { color: var(--action); }
+        .text-red { color: var(--red); }
+        
+        /* 3. BUTTONS (TRUST DESIGN) */
+        .btn { 
+            display: inline-block; 
+            background-color: var(--action); 
+            color: #fff; 
+            font-weight: 800; 
+            padding: 16px 32px; 
+            border-radius: 50px; 
+            font-size: 1.1rem; 
+            border: none; 
+            cursor: pointer; 
+            text-transform: uppercase; 
+            letter-spacing: 0.5px;
+            transition: transform 0.1s ease, opacity 0.2s ease;
+            box-shadow: 0 4px 14px rgba(4, 120, 87, 0.4); 
+        }
+        .btn:active { transform: scale(0.98); }
+        .btn:hover { opacity: 0.9; }
+        .btn-full { width: 100%; text-align: center; border-radius: 12px; }
+
+        /* 4. SECTIONS */
+        .section { padding: 50px 0; }
+        .bg-light { background-color: var(--bg-light); }
+        .bg-dark { background-color: var(--dark); color: var(--white); }
+
+        /* 5. HERO OPTIMIZED */
+        .hero { 
+            background-color: var(--bg-light); 
+            padding: 40px 0 60px; 
+            color: var(--dark); 
+            text-align: center; 
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid #fed7aa;
+        }
+        .hero-wrap { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; }
+        
+        .hero h1 { 
+            font-size: 1.8rem; 
+            line-height: 1.25; 
+            margin-bottom: 15px; 
+            color: var(--primary);
+            font-weight: 800;
+        }
+        .hero-highlight { color: var(--dark); text-decoration: underline; text-decoration-color: var(--primary); }
+        
+        .hero-sub { 
+            font-size: 1.1rem; 
+            color: #57534e; 
+            margin-bottom: 25px; 
+            max-width: 600px; 
+            line-height: 1.5;
+        }
+        
+        .tag { 
+            display: inline-block; 
+            background: #ffedd5; 
+            color: var(--primary); 
+            padding: 6px 16px; 
+            border-radius: 30px; 
+            font-size: 0.75rem; 
+            font-weight: bold; 
+            margin-bottom: 20px; 
+            text-transform: uppercase;
+            border: 1px solid var(--primary);
+        }
+
+        /* 6. GRID & CARDS */
+        .grid-3 { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 30px; }
+        .card { background: var(--white); padding: 25px; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+        .card-dark { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); }
+
+        /* Checklist Style for Symptoms */
+        .symptom-box { background: white; padding: 15px; border-radius: 10px; border-left: 5px solid var(--primary); margin-bottom: 10px; text-align: left; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+
+        /* 7. PRICING & VALUE STACK */
+        .pricing-card { 
+            background: var(--white); 
+            border: 3px solid var(--primary); 
+            border-radius: 24px; 
+            padding: 30px 20px; 
+            max-width: 480px; 
+            margin: 0 auto; 
+            text-align: center; 
+            color: var(--text-main); 
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); 
+            position: relative; 
+        }
+        .price-tag { font-size: 3.5rem; font-weight: 800; color: var(--dark); line-height: 1; letter-spacing: -1px; margin: 10px 0; }
+        
+        .value-stack { text-align: left; margin: 25px 0; font-size: 0.95rem; }
+        
+        /* Timer */
+        .timer-box {
+            background: #fee2e2; 
+            color: #b91c1c; 
+            display: inline-block;
+            padding: 6px 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: monospace;
+            border: 1px solid #fca5a5;
+        }
+
+        /* 8. FAQ ACCORDION */
+        details { background: #fff; border: 1px solid #fed7aa; border-radius: 10px; margin-bottom: 10px; padding: 15px; text-align: left; }
+        details summary { font-weight: bold; cursor: pointer; list-style: none; position: relative; padding-right: 20px; color: var(--dark); }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: "+"; position: absolute; right: 0; font-weight: bold; color: var(--primary); font-size: 1.2rem; line-height: 1; }
+        details[open] summary::after { content: "-"; color: var(--red); }
+        details p { margin-top: 10px; font-size: 0.9rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 10px; }
+
+        /* 9. MOBILE STICKY CTA */
+        .mobile-cta { 
+            position: fixed; bottom: 0; left: 0; width: 100%; 
+            background: white; padding: 15px 20px; 
+            border-top: 1px solid #e2e8f0; 
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.1); 
+            z-index: 999; display: flex; flex-direction: column; gap: 5px;
+        }
+        .mobile-cta-btn {
+            background: var(--action); color: white;
+            text-align: center; padding: 14px;
+            border-radius: 8px; font-weight: bold;
+            font-size: 1rem; text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(4, 120, 87, 0.3);
+        }
+
+        footer { background: var(--dark); color: #fed7aa; padding: 40px 0 120px; text-align: center; font-size: 0.8rem; }
+        footer a { color: white; text-decoration: underline; }
+
+        @media (min-width: 768px) {
+            body { padding-bottom: 0; }
+            footer { padding-bottom: 40px; }
+            .mobile-cta { display: none; }
+            .hero h1 { font-size: 3rem; } 
+            .hero-img-container img { width: 350px; }
+            .grid-3 { grid-template-columns: repeat(3, 1fr); }
+            .flex-row { display: flex; gap: 50px; align-items: center; }
+            .w-50 { width: 50%; }
+        }
+
+        /* Mobile Adjustment */
+        @media (max-width: 768px) {
+            .hero-img-container img { width: 260px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="container hero-wrap">
+            <div class="tag"><i class="fas fa-heart"></i> Parenting Tanpa Rasa Bersalah</div>
+            
+            <!-- UPDATE HEADLINE -->
+            <h1>DETOX GADGET ANAK<br><span class="hero-highlight">TANPA DRAMA</span></h1>
+            
+            <!-- UPDATE SUBHEADLINE -->
+            <p class="hero-sub">
+                Panduan orang tua mengurangi ketergantungan gadget secara bertahap, aman, dan realistis.
+            </p>
+
+            <!-- UPDATE URUTAN POIN -->
+            <div style="margin-bottom: 25px; text-align: left; display: inline-block; color: #431407; font-size: 0.95rem;">
+                <div style="margin-bottom: 5px;"><i class="fas fa-check-circle text-action"></i> Script Komunikasi Anti-Tantrum</div>
+                <div style="margin-bottom: 5px;"><i class="fas fa-check-circle text-action"></i> Protokol 7 Hari Siap Pakai</div>
+                <div><i class="fas fa-check-circle text-action"></i> Pendekatan Detox Dopamin</div>
+            </div>
+            
+            <!-- Gambar Cover -->
+            <div class="hero-img-container" style="margin-bottom: 25px;">
+                <img src="image/cover.png" alt="Ebook Detox Gadget Anak" width="280" height="400" style="border-radius: 8px; box-shadow: 0 10px 30px rgba(194, 65, 12, 0.2);">
+            </div>
+
+            <div style="width: 100%; max-width: 500px;">
+                <a href="#pricing" class="btn btn-full">BACA PROTOKOL DETOX SEKARANG &raquo;</a>
+                <p style="font-size: 0.8rem; color: #78716c; margin-top: 15px;">
+                    <i class="fas fa-book-reader text-action"></i> Format PDF - Langsung Baca di HP
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAIN POINTS (CHECKLIST GEJALA) -->
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 10px; color: var(--primary);">Cek Cepat: Apakah Ini Terjadi di Rumah?</h2>
+            
+            <!-- UPDATE KALIMAT PENEKAN -->
+            <p class="text-center" style="margin-bottom: 30px; color: #64748b;">
+                <strong>Jika Anda mencentang 2 atau lebih, buku ini untuk Anda.<br>Sebagian besar orang tua mencentang lebih dari 3 tanpa menyadarinya.</strong>
+            </p>
+            
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div class="symptom-box">
+                    <i class="fas fa-times-circle text-red"></i> <strong>Bangun Tidur Langsung Cari HP</strong>
+                    <p style="font-size:0.85rem; margin-top:5px; color:#666;">Anak gelisah jika gadget tidak ada di dekatnya.</p>
+                </div>
+                <div class="symptom-box">
+                    <i class="fas fa-times-circle text-red"></i> <strong>Marah Meledak (Tantrum)</strong>
+                    <p style="font-size:0.85rem; margin-top:5px; color:#666;">Saat gadget dimatikan atau kuota habis, emosinya tidak terkendali.</p>
+                </div>
+                <div class="symptom-box">
+                    <i class="fas fa-times-circle text-red"></i> <strong>Sulit Fokus & Cepat Bosan</strong>
+                    <p style="font-size:0.85rem; margin-top:5px; color:#666;">Tidak tertarik mainan fisik, buku, atau aktivitas tanpa layar.</p>
+                </div>
+                <div class="symptom-box">
+                    <i class="fas fa-times-circle text-red"></i> <strong>"Lebih Tenang dengan Layar"</strong>
+                    <p style="font-size:0.85rem; margin-top:5px; color:#666;">Anda merasa anak lebih "manis" saat pegang HP daripada saat berinteraksi dengan manusia.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 30px;">
+                <p style="color: #475569; margin-bottom: 10px;">Berita baiknya: <strong>Anak Anda Tidak Nakal. Otaknya Sedang "Kewalahan".</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUKASI (MENGAPA GAGAL) -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <h2 style="font-size: 1.8rem; line-height: 1.2; color: var(--dark);">3 Kesalahan Fatal Orang Tua Saat Mengatasi Gadget</h2>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <i class="fas fa-ban text-center" style="font-size: 2rem; color: var(--primary); display:block; margin-bottom: 15px;"></i>
+                    <h4 class="bold">Larangan Total (Cold Turkey)</h4>
+                    <p style="font-size: 0.9rem; color: #64748b;">Menyita HP secara tiba-tiba justru memicu "Sakaw Dopamin". Anak akan melawan karena otaknya kaget kehilangan stimulasi.</p>
+                </div>
+                <div class="card" style="border-color: #fca5a5;">
+                    <i class="fas fa-brain text-center" style="font-size: 2rem; color: var(--red); display:block; margin-bottom: 15px;"></i>
+                    <h4 class="bold text-red">Tidak Paham "Prefrontal Cortex"</h4>
+                    <p style="font-size: 0.9rem; color: #64748b;">Menganggap anak "Keras Kepala", padahal bagian otak pengendali dirinya belum matang. Mereka butuh bantuan, bukan amarah.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-mobile-alt text-center" style="font-size: 2rem; color: var(--primary); display:block; margin-bottom: 15px;"></i>
+                    <h4 class="bold">Standar Ganda</h4>
+                    <p style="font-size: 0.9rem; color: #64748b;">Melarang anak main HP, tapi orang tua sendiri sibuk scrolling di depan anak. Anak belajar dari apa yang dilihat, bukan didengar.</p>
+                </div>
+            </div>
+
+            <!-- UPDATE PENUTUP KESALAHAN -->
+            <div class="text-center" style="margin-top: 30px;">
+                <p style="color: #431407; font-style: italic;">"Buku ini tidak menghakimi kesalahan tersebut, tetapi memberi jalan keluar yang bisa dilakukan."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUSI (PROCESS SECTION) -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <span class="text-primary bold">METODE YANG KAMI TAWARKAN</span>
+                <h2 style="color: var(--dark);">Detox, Bukan Puasa Total</h2>
+                <!-- UPDATE PEMBEDA METODE -->
+                <p style="color: #64748b; font-style: italic;">Dirancang untuk orang tua sibuk, bukan keluarga ideal di teori.</p>
+            </div>
+            
+            <div class="grid-3" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <div class="card text-center">
+                    <span style="background:var(--primary); color:white; width:35px; height:35px; border-radius:50%; display:inline-block; line-height:35px; font-weight:bold; margin-bottom:15px;">1</span>
+                    <h4>Reset Lingkungan</h4>
+                    <p style="font-size: 0.85rem; color: #64748b;">Menata rumah agar "ramah fokus" dan mengurangi pemicu visual kecanduan.</p>
+                </div>
+                <div class="card text-center">
+                    <span style="background:var(--primary); color:white; width:35px; height:35px; border-radius:50%; display:inline-block; line-height:35px; font-weight:bold; margin-bottom:15px;">2</span>
+                    <h4>Ganti Dopamin</h4>
+                    <p style="font-size: 0.85rem; color: #64748b;">Mengganti "Dopamin Murahan" (Gadget) dengan "Dopamin Sehat" (Aktivitas Fisik & Koneksi).</p>
+                </div>
+                <div class="card text-center">
+                    <span style="background:var(--primary); color:white; width:35px; height:35px; border-radius:50%; display:inline-block; line-height:35px; font-weight:bold; margin-bottom:15px;">3</span>
+                    <h4>Transisi Tanpa Drama</h4>
+                    <p style="font-size: 0.85rem; color: #64748b;">Menggunakan <strong>Script Komunikasi</strong> khusus agar anak mau berhenti main tanpa mengamuk.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- URGENCY (DARK SECTION) -->
+    <section class="section bg-dark">
+        <div class="container flex-row">
+            <div class="w-50">
+                <span class="text-primary bold" style="color: #fb923c;">HARAPAN ITU MASIH ADA</span>
+                <h2 style="margin-bottom: 20px; font-size: 2rem;">Anak Anda Tidak Rusak</h2>
+                <div style="margin-bottom: 25px;">
+                    <p style="font-size: 1rem; color: #fed7aa; line-height:1.8;">
+                        Mereka hanya tumbuh di lingkungan yang terlalu cepat dan bising. Sistem dopamin mereka dipaksa bekerja tanpa jeda.<br><br>
+                        Tujuannya bukan membuat anak benci teknologi, tapi <strong>mengembalikan kendali</strong> agar teknologi jadi alat, bukan majikan.
+                    </p>
+                </div>
+            </div>
+            <div class="w-50 card card-dark text-center" style="padding: 30px;">
+                <h3 style="margin-bottom: 20px;">Pilihan Orang Tua</h3>
+                <div style="margin: 20px 0; text-align: left;">
+                    <div style="background: rgba(220, 38, 38, 0.15); padding: 15px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid var(--red);">
+                        <span style="color: #fca5a5; font-weight: bold; font-size: 0.8rem;">MEMBIARKAN (Berbahaya)</span>
+                        <p style="font-size: 0.9rem;">Fokus menurun, emosi tidak stabil, kehilangan momen masa kecil.</p>
+                    </div>
+                    <div style="background: rgba(21, 128, 61, 0.25); padding: 15px; border-radius: 8px; border-left: 4px solid var(--action);">
+                        <span style="color: #86efac; font-weight: bold; font-size: 0.8rem;">BERTINDAK SEKARANG (Bijak)</span>
+                        <p style="font-size: 0.9rem;">Otak anak pulih, hubungan emosional kembali hangat.</p>
+                    </div>
+                </div>
+                <a href="#pricing" class="btn btn-full">SAYA PILIH PULIHKAN ANAK</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI (VISUALISASI HASIL) -->
+    <section class="section bg-white">
+        <div class="container">
+            <!-- UPDATE JUDUL TESTIMONI -->
+            <h2 class="text-center" style="margin-bottom: 10px; color: var(--primary);">"Mereka Juga Orang Tua Biasa, Bukan Sempurna"</h2>
+            <p class="text-center" style="margin-bottom: 40px; color: #64748b;">Kata orang tua yang sudah mempraktikkan protokol ini.</p>
+            
+            <div class="grid-3">
+                <div style="background: #fff7ed; padding: 20px; border-radius: 12px; border: 1px solid #fed7aa;">
+                    <div style="color: #f59e0b; margin-bottom: 10px; font-size: 0.9rem;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p style="font-size: 0.9rem; font-style: italic; color: #431407;">"Paling suka bagian 'Script Komunikasi'. Dulu kalau disuruh stop HP pasti perang dunia. Sekarang pake kalimat dari buku ini, anak malah bilang 'Oke bunda' dan taruh HP sendiri. Ajaib."</p>
+                    <div style="margin-top: 15px; font-weight: bold; font-size: 0.85rem;">- Bunda Rina, Ibu 2 Anak</div>
+                </div>
+
+                <div style="background: #fff7ed; padding: 20px; border-radius: 12px; border: 1px solid #fed7aa;">
+                    <div style="color: #f59e0b; margin-bottom: 10px; font-size: 0.9rem;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p style="font-size: 0.9rem; font-style: italic; color: #431407;">"Saya baru sadar kalau istilah 'Bosan' itu penting buat anak. Buku ini nampar banget tapi solutif. Checklist 7 harinya ngebantu banget buat tetap konsisten."</p>
+                    <div style="margin-top: 15px; font-weight: bold; font-size: 0.85rem;">- Pak Dimas, Karyawan</div>
+                </div>
+                
+                <div style="background: #fff7ed; padding: 20px; border-radius: 12px; border: 1px solid #fed7aa;">
+                    <div style="color: #f59e0b; margin-bottom: 10px; font-size: 0.9rem;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p style="font-size: 0.9rem; font-style: italic; color: #431407;">"Isinya realistis! Gak nyuruh buang TV atau anti teknologi. Tapi ngajarin gimana caranya hidup berdampingan sama gadget tanpa jadi zombie. Recommended!"</p>
+                    <div style="margin-top: 15px; font-weight: bold; font-size: 0.85rem;">- Nadia Safitri, Wiraswasta</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AUTHOR / PENGANTAR -->
+    <section class="section bg-light">
+        <div class="container text-center">
+            <div style="background: #ffffff; display: inline-block; padding: 30px; border-radius: 20px; border: 1px solid #e2e8f0; max-width: 700px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <p class="bold text-primary" style="font-size: 0.9rem; letter-spacing: 1px; margin-bottom: 15px;">DARI PENULIS</p>
+                
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                    
+                    <div style="text-align: center;">
+                        <h4 class="bold" style="font-size: 1.2rem; margin-bottom: 10px;">Untuk Anda, Orang Tua yang Peduli</h4>
+                        <p style="font-size: 1rem; color: #475569; margin-bottom: 15px; line-height: 1.6;">
+                            "Buku ini tidak ditulis untuk menyalahkan Anda. Tidak ada orang tua yang dengan sadar ingin anaknya kecanduan. Yang ada hanyalah orang tua yang berusaha bertahan di dunia yang berubah terlalu cepat."
+                        </p>
+                        <p style="font-size: 0.9rem; color: #64748b;">
+                            Mari kita ambil kembali kendali itu, perlahan, tanpa drama, mulai hari ini.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="section bg-dark" style="border-top: 5px solid var(--primary);">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 30px;">
+                <!-- UPDATE JUDUL PRICING -->
+                <h2 style="color: white;">Satu Keputusan Kecil untuk Rumah yang Lebih Tenang</h2>
+                <p style="color: #fed7aa;">Lebih murah dari harga paket data bulanan anak Anda.</p>
+            </div>
+
+            <div class="pricing-card">
+                <!-- Label -->
+                <div style="background: var(--primary); color: white; position: absolute; top: 0; right: 0; padding: 5px 15px; border-bottom-left-radius: 15px; font-size: 0.8rem; font-weight: bold;">BEST SELLER</div>
+                
+                <h3 style="margin-bottom: 10px; color: var(--dark); letter-spacing: 1px;">EBOOK DETOX GADGET</h3>
+                
+                <!-- Harga Coret -->
+                <div style="margin-bottom: 10px;">
+                    <span style="text-decoration: line-through; color: #94a3b8; font-size: 1rem;">Harga Normal: Rp 199.000</span>
+                </div>
+
+                <!-- Harga Diskon -->
+                <div class="price-tag" style="margin-bottom: 20px;">
+                    <span style="font-size: 1.5rem; color: var(--text-main);">Rp</span>99<span style="font-size: 1.5rem; color: var(--text-main);">rb</span>
+                </div>
+
+                <hr style="border: 0; border-top: 1px dashed #cbd5e1; margin: 20px 0;">
+                
+                <!-- Benefit List -->
+                <div class="value-stack" style="margin: 0 auto; max-width: 90%;">
+                    <div style="margin-bottom: 12px; display: flex; align-items: flex-start; text-align: left;">
+                        <i class="fas fa-check-circle text-action" style="margin-top: 4px; margin-right: 10px;"></i>
+                        <div>
+                            <span class="bold" style="display:block; color: var(--dark);">Ebook Utama (25+ Halaman)</span>
+                            <span style="font-size: 0.85rem; color: #64748b;">Panduan komprehensif memahami otak & strategi detox.</span>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 12px; display: flex; align-items: flex-start; text-align: left;">
+                        <i class="fas fa-check-circle text-action" style="margin-top: 4px; margin-right: 10px;"></i>
+                        <div>
+                            <span class="bold" style="display:block; color: var(--dark);">BONUS: Checklist Tempel & Pakai</span>
+                            <span style="font-size: 0.85rem; color: #64748b;">Poster checklist harian agar konsisten (Printable).</span>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 12px; display: flex; align-items: flex-start; text-align: left;">
+                        <i class="fas fa-check-circle text-action" style="margin-top: 4px; margin-right: 10px;"></i>
+                        <div>
+                            <span class="bold" style="display:block; color: var(--dark);">BONUS: Script Anti-Tantrum</span>
+                            <span style="font-size: 0.85rem; color: #64748b;">Kumpulan kalimat "sakti" untuk meluluhkan emosi anak.</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 12px; display: flex; align-items: flex-start; text-align: left;">
+                        <i class="fas fa-check-circle text-action" style="margin-top: 4px; margin-right: 10px;"></i>
+                        <div>
+                            <span class="bold" style="display:block; color: var(--dark);">Daftar Aktivitas Pengganti</span>
+                            <span style="font-size: 0.85rem; color: #64748b;">Ide kegiatan sesuai usia (3-13 Tahun).</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TIMER -->
+                <div class="timer-box" style="margin-top: 20px;">
+                    <i class="fas fa-clock"></i> Harga Promo: <span class="countdown">00:00:00</span>
+                </div>
+
+                <!-- TOMBOL UTAMA (UPDATE TEXT) -->
+                <a href="https://digibrain.myr.id/pl/detox-gadget-anak" 
+                   class="btn btn-full"
+                   onclick="fbq('track', 'InitiateCheckout');">
+                    MULAI RESET GADGET ANAK <i class="fas fa-download"></i>
+                </a>
+
+                <div style="margin-top: 15px; font-size: 0.75rem; color: #64748b;">
+                    <i class="fas fa-lock text-action"></i> Akses Selamanya & Garansi Uang Kembali
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section bg-white">
+        <div class="container">
+            <h3 class="text-center bold" style="margin-bottom:30px; color: var(--primary);">Pertanyaan Sering Diajukan (FAQ)</h3>
+            <div style="max-width: 650px; margin: 0 auto;">
+                
+                <details open>
+                    <summary>Apakah gadget harus dilarang total?</summary>
+                    <p>Tidak. Kami tidak menyarankan larangan total karena akan memicu pemberontakan. Metode kami adalah <strong>pengaturan ulang (re-setting)</strong> dan pengurangan bertahap agar anak tetap melek teknologi tapi tidak dikendalikan olehnya.</p>
+                </details>
+
+                <details>
+                    <summary>Untuk anak usia berapa buku ini?</summary>
+                    <p>Strategi di buku ini paling efektif untuk anak usia <strong>3 hingga 13 tahun</strong>. Tersedia juga bagian khusus yang membedakan aktivitas untuk balita dan pra-remaja.</p>
+                </details>
+
+                <details>
+                    <summary>Anak saya sudah kecanduan parah, apakah bisa?</summary>
+                    <p>Sangat bisa. Otak anak memiliki plastisitas tinggi (mudah berubah/beradaptasi). Dengan panduan yang tepat dan konsistensi orang tua, sensitivitas dopamin anak bisa dipulihkan kembali.</p>
+                </details>
+
+                <details>
+                    <summary>Apakah isinya hanya teori?</summary>
+                    <p>Buku ini sangat praktis. Berisi checklist, jadwal harian, dan kalimat-kalimat langsung (script) yang bisa Anda ucapkan ke anak saat situasi memanas.</p>
+                </details>
+
+                <!-- UPDATE TAMBAHAN FAQ -->
+                <details>
+                    <summary>Apakah buku ini cocok jika anak belum parah kecanduan?</summary>
+                    <p>Justru paling ideal. Semakin dini pola gadget diatur, semakin minim konflik ke depannya.</p>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p class="bold" style="color: white; margin-bottom: 10px;">DETOX GADGET ANAK</p>
+            <p style="margin-bottom: 20px; color: #fed7aa;">
+                <a href="#">Syarat & Ketentuan</a> &bull; <a href="#">Kebijakan Privasi</a> &bull; <a href="#">Hubungi Kami</a>
+            </p>
+            <p style="opacity: 0.7; max-width: 600px; margin: 0 auto; color: #fff;">Disclaimer: Hasil setiap anak mungkin berbeda tergantung konsistensi penerapan orang tua.</p>
+            <p style="margin-top: 20px; color: #fff;">&copy; 2026 Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- MOBILE CTA (Sticky Bottom) -->
+    <div class="mobile-cta">
+        <a href="#pricing" 
+           class="mobile-cta-btn"
+           onclick="fbq('track', 'InitiateCheckout');">
+            MULAI RESET GADGET ANAK <i class="fas fa-angle-double-right"></i>
+        </a>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        // 1. COUNTDOWN TIMER
+        function startTimer(duration, displays) {
+            var timer = duration, hours, minutes, seconds;
+            setInterval(function () {
+                hours = parseInt(timer / 3600, 10);
+                minutes = parseInt((timer % 3600) / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                displays.forEach(function(display) {
+                    display.textContent = hours + ":" + minutes + ":" + seconds;
+                });
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Timer 4 Jam (Urgency)
+            var startTime = 14400; 
+            var displays = document.querySelectorAll('.countdown');
+            startTimer(startTime, displays);
+        });
+    </script>
+</body>
+</html>
