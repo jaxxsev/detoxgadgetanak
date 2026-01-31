@@ -26,12 +26,12 @@
     fbq('init', '1279669170653881'); 
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
+    <noscript><img height="1" width="1" style="display:none" loading="lazy"
     src="https://www.facebook.com/tr?id=1279669170653881&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
 
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome Icons (Loaded Asynchronously for Speed) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
@@ -52,7 +52,7 @@
             --red: #dc2626; 
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--white); color: var(--text-main); line-height: 1.6; padding-bottom: 90px; text-rendering: optimizeSpeed; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--white); color: var(--text-main); line-height: 1.6; padding-bottom: 90px; text-rendering: optimizeSpeed; -webkit-font-smoothing: antialiased; }
         a { text-decoration: none; color: inherit; }
         img { max-width: 100%; height: auto; display: block; }
         ul { list-style: none; }
@@ -182,18 +182,20 @@
         /* 9. MOBILE STICKY CTA */
         .mobile-cta { 
             position: fixed; bottom: 0; left: 0; width: 100%; 
-            background: white; padding: 15px 20px; 
+            background: white; padding: 12px 20px 15px; 
             border-top: 1px solid #e2e8f0; 
             box-shadow: 0 -4px 20px rgba(0,0,0,0.1); 
             z-index: 999; display: flex; flex-direction: column; gap: 5px;
         }
         .mobile-cta-btn {
             background: var(--action); color: white;
-            text-align: center; padding: 14px;
-            border-radius: 8px; font-weight: bold;
-            font-size: 1rem; text-transform: uppercase;
+            text-align: center; padding: 15px;
+            border-radius: 8px; font-weight: 800;
+            font-size: 1.1rem; text-transform: uppercase;
             box-shadow: 0 4px 10px rgba(4, 120, 87, 0.3);
+            text-decoration: none;
         }
+        .mobile-cta-btn:hover { background: #065f46; }
 
         footer { background: var(--dark); color: #fed7aa; padding: 40px 0 120px; text-align: center; font-size: 0.8rem; }
         footer a { color: white; text-decoration: underline; }
@@ -239,7 +241,7 @@
             
             <!-- Gambar Cover -->
             <div class="hero-img-container" style="margin-bottom: 25px;">
-                <img src="image/cover.png" alt="Ebook Detox Gadget Anak" width="280" height="400" style="border-radius: 8px; box-shadow: 0 10px 30px rgba(194, 65, 12, 0.2);">
+                <img src="image/cover.png" alt="Ebook Detox Gadget Anak" width="280" height="400" fetchpriority="high" style="border-radius: 8px; box-shadow: 0 10px 30px rgba(194, 65, 12, 0.2);">
             </div>
 
             <div style="width: 100%; max-width: 500px;">
@@ -567,10 +569,10 @@
 
     <!-- MOBILE CTA (Sticky Bottom) -->
     <div class="mobile-cta">
-        <a href="#pricing" 
+        <a href="https://digibrain.myr.id/pl/detox-gadget-anak" 
            class="mobile-cta-btn"
            onclick="fbq('track', 'InitiateCheckout');">
-            MULAI RESET GADGET ANAK <i class="fas fa-angle-double-right"></i>
+            AMBIL PROMO 129rb <i class="fas fa-angle-double-right"></i>
         </a>
     </div>
 
@@ -608,4 +610,3 @@
 </body>
 
 </html>
-
